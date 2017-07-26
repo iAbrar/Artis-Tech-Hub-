@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+html,body{
+font-family: 'Cousine', monospace;
+height: 100%;
+}
+.pattern{
+background-image: url('maze.jpg');
+}
+
+.retro{
+background-image: url('retro-furnish.png');
+background-repeat: repeat-x;
+}
+
+.box{
+    height: 100%;
+}
+
+.box > div {
+    float: left;
+    width: 33.33333333%;
+    height: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+ padding: 2%;
+
+}
+
+.row{
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    font-size: 1.313rem;
+    position: relative;
+}
+
+.yellow{
+    background-color: #FFF200;
+}
+
+.black{
+    background-color: #292b2c;
+    color: white;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.gray{
+    background-color: #eee;
+}
+
+.dark-gray{
+        background: #dadada;
+}
+
+.middle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    color: #292b2c;
+}
+
+p{
+    margin-top: 50px;
+}
+img{
+    max-width: 30%!important;
+    margin-right: 5%;
+}
+
+.container{
+    padding-top: 10%;
+}
+
+@media (max-width: 800px), (max-height: 800px){
+.box > div {
+   /* display: none;*/
+    width: 50%;
+    height: 250px;
+    }
+}
+
+@media (max-width: 800px), (max-height: 800px){
+.test {
+    display: block!important;
+
+    }
+}
+
+@media (max-width: 568px){
+.box > div {
+    width: 100%;
+}
+}
